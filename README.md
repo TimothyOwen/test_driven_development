@@ -1,13 +1,13 @@
 <h1>Test Driven Development</h1>
 Java test driven development exercise.  
 
-1. *multiChar<br>
+1. *multiChar*
 
- Given a string, return a string where for every char in the original string, there are three chars.<br>
- For Example:<br>
- * multChar("The") → "TTThhheee"<br>
- * multChar("AAbb") → "AAAAAAbbbbbb"<br>
- * multChar("Hi-There") → "HHHiii---TTThhheeerrreee"<br>
+ 	Given a string, return a string where for every char in the original string, there are three chars.<br>
+ 	For Example:<br>
+ 	* multChar("The") → "TTThhheee"<br>
+ 	* multChar("AAbb") → "AAAAAAbbbbbb"<br>
+	 * multChar("Hi-There") → "HHHiii---TTThhheeerrreee"<br>
    
    
 
