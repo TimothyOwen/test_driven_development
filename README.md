@@ -4,6 +4,7 @@ Java test driven development exercise.
 1. *multiChar*
 
  	Given a string, return a string where for every char in the original string, there are three chars.	
+	
  	For Example:	
  	* multChar("The") → "TTThhheee"	
  	* multChar("AAbb") → "AAAAAAbbbbbb"	
@@ -17,6 +18,7 @@ Java test driven development exercise.
 	Return the string (backwards) that is between the first and last appearance  
 	of "bread" in the given string, or return the empty string "" if there is not  
 	2 occurances of "bread". Ignore Case.	
+	
 	For Example:	
 	* sandwichFilling("breadclivebread") → "evilc"
 	* sandwichFilling("xxbreadfridgebreadyy") → "egdirf"
@@ -47,7 +49,8 @@ Java test driven development exercise.
 	 Given a string and an int n, return a string that removes n letters from	
 	 the'middle' of the string. The string length will be at least n. The input	
 	 string will have an odd number of letters. n will always be an odd	
-	 number.		
+	 number.	
+	 
 	 For Example:	
 	 * nMid("Hello", 3) → "Ho"
 	 * nMid("Chocolate", 3) → "Choate"
@@ -57,6 +60,7 @@ Java test driven development exercise.
 
 	 Given a string, return the boolean True if it ends in "java" and False if
 	 does not end in "java". Ignore Case.	
+	 
 	 For Example:	
 	 * endsJava("ilovejava") → true
 	 * endsJava("iloveJaVa") → true
@@ -84,6 +88,7 @@ Java test driven development exercise.
 	Given a string - return the number of times "am" appears in the String	
 	ignoring case - BUT ONLY WHEN the word "am" appears without being followed or	
 	preceded by other letters.		
+	
 	For Example:	
 	* amISearch("Am I in Amsterdam") → 1	
 	* amISearch("I am in Amsterdam am I?") → 2	
@@ -94,13 +99,14 @@ Java test driven development exercise.
 
 	 Given a number if this number is divisible by 3 return "fizz" if this number	
 	 is divisible by 5 return "buzz" if this number is divisible by both 3 and 5	
-	 return "fizzbuzz" if this number is not divisible by 3 or 5 return null.		
-	 For Example:	
-	 fizzBuzz(3) → "fizz"	
-	 fizzBuzz(10) → "buzz"	
-	 fizzBuzz(15) → "fizzbuzz"	
+	 return "fizzbuzz" if this number is not divisible by 3 or 5 return null.	
+	 
+	 For Example:		
+	 fizzBuzz(3) → "fizz"		
+	 fizzBuzz(10) → "buzz"		
+	 fizzBuzz(15) → "fizzbuzz"		
 	 fizzBuzz(8) → null	
-
+	
 9. *largest*
 
 	 Given a string, split the string into the individual numbers present then add
@@ -126,6 +132,7 @@ Java test driven development exercise.
 	 (represented by the int provided) char of the String supplied is the same as		
 	 the char supplied. The int provided will NOT always be less than than the		
 	 length of the String. Ignore case and Whitespace.	
+	 
 	 For Example:		
 	 * compares("The",2,'h') → true
 	 * compares("AAbb",1,'b') → false
