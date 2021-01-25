@@ -145,8 +145,8 @@ public class Questions {
 	 */
 	public int superBlock(String input) {
 		int strlength = input.length();
-		input += "";
-		int answer = 1;
+		input += " ";
+		int answer = 0;
 		int counter = 1;
 		int j;
 		System.out.println(input);
