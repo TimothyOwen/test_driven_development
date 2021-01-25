@@ -17,7 +17,8 @@ public class Questions {
 	 * 
 	 */
 	public String greetingExample(String name) {
-		return "Hi " + name;
+		String answer = "Hi " + name;
+		return answer;
 	}
 
 	/**
@@ -102,8 +103,8 @@ public class Questions {
 	public String nMid(String input, int n) {
 		int strlength = input.length();
 		int middle = (strlength+1)/2;
-		int minus = (n-1)/2;
-		String answer = input.substring(0,middle-minus-1) + input.substring(middle+minus);
+		int variance = (n-1)/2;
+		String answer = input.substring(0,middle-variance-1) + input.substring(middle+variance);
 		return answer;
 	}
 
@@ -122,11 +123,10 @@ public class Questions {
 	public boolean endsJava(String input) {
 		int strlength = input.length();
 		boolean answer = false;
-		if(input.substring(strlength-1).toLowerCase().equals("a") &
-					input.substring(strlength-2,strlength-1).toLowerCase().equals("v") &
-					input.substring(strlength-3,strlength-2).toLowerCase().equals("a") &
-					input.substring(strlength-4,strlength-3).toLowerCase().equals("j")
-					) {
+		if (input.substring(strlength - 1).toLowerCase().equals("a")
+				& input.substring(strlength - 2, strlength - 1).toLowerCase().equals("v")
+				& input.substring(strlength - 3, strlength - 2).toLowerCase().equals("a")
+				& input.substring(strlength - 4, strlength - 3).toLowerCase().equals("j")) {
 			answer = true;
 		}
 		return answer;
@@ -145,25 +145,23 @@ public class Questions {
 	 */
 	public int superBlock(String input) {
 		int strlength = input.length();
-		input += " ";
 		int answer = 0;
 		int counter = 1;
 		int j;
-		System.out.println(input);
-		for(int i=0; i<strlength-1; i++) {
-			if(input.substring(i,i+1).equals(input.substring(i+1,i+2))) {
+		input += " ";
+		for (int i = 0; i < strlength - 1; i++) {
+			if (input.substring(i, i + 1).equals(input.substring(i + 1, i + 2))) {
 				j = i;
-				while(input.substring(j,j+1).equals(input.substring(j+1,j+2))) {
-					System.out.println(input.substring(j,j+1));
+				while (input.substring(j, j + 1).equals(input.substring(j + 1, j + 2))) {
 					counter += 1;
-					j +=1;
-					System.out.println(counter);
+					j += 1;
 				}
-				if(counter>answer) {answer=counter;}
+				if (counter > answer) {
+					answer = counter;
+				}
 			}
 			counter = 1;
 		}
-		System.out.println(answer);
 		return answer;
 	}
 
@@ -181,14 +179,14 @@ public class Questions {
 	 */
 	public int amISearch(String sentence) {
 		int answer = 0;
-		int length = sentence.length();
+		int strLength = sentence.length();
 		sentence = " " + sentence.toLowerCase() + " ";
-		for(int i=1; i<length; i++) {
+		for(int i=1; i<strLength; i++) {
 			try {
-				if(sentence.substring(i,i+1).equals("a")
+				if(sentence.substring(i-1,i).equals(" ") 
+						& sentence.substring(i,i+1).equals("a")
 						& sentence.substring(i+1,i+2).equals("m")
 						& sentence.substring(i+2,i+3).equals(" ")
-						& sentence.substring(i-1,i).equals(" ")
 						) {
 					answer += 1;
 				}}
@@ -240,21 +238,23 @@ public class Questions {
 	 */
 
 	public int largest(String input) {
-		int start=0;
-		int answer=0;
-		int number=0;
-		int length=input.length();
+		int answer = 0;
+		int indexStart = 0;
+		int parsedNumber = 0;
+		int strLength = input.length();
 		input += "  ";
-		for(int i=0; i<length+1; i++) {
-			if(input.substring(i,i+1).equals(" ")){
-				String unit = input.substring(start,i);
-				for(int j=0; j<unit.length(); j++) {
-					number += Integer.parseInt(unit.substring(j,j+1));
+		for (int i = 0; i < strLength + 1; i++) {
+			if (input.substring(i, i + 1).equals(" ")) {
+				String unit = input.substring(indexStart, i);
+				for (int j = 0; j < unit.length(); j++) {
+					parsedNumber += Integer.parseInt(unit.substring(j, j + 1));
 				}
-				if(number>answer) {answer=number;}
-				number = 0;
-				start = i+1;	
-			}	
+				if (parsedNumber > answer) {
+					answer = parsedNumber;
+				}
+				parsedNumber = 0;
+				indexStart = i + 1;
+			}
 		}
 		return answer;
 	}
