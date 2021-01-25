@@ -1,21 +1,17 @@
 <h1>Test Driven Development</h1>
 Java test driven development exercise.  
 
-1. multiChar  
+1. *multiChar<br>
 
- * Given a string, return a string where for every char in the original string,
-	 * there are three chars.<br>
-	 * <br>
-	 * 
-	 * For Example:<br>
-	 * multChar("The") → "TTThhheee"<br>
-	 * multChar("AAbb") → "AAAAAAbbbbbb"<br>
-	 * multChar("Hi-There") → "HHHiii---TTThhheeerrreee"
-	 */
+ Given a string, return a string where for every char in the original string, there are three chars.<br>
+ For Example:<br>
+ * multChar("The") → "TTThhheee"<br>
+ * multChar("AAbb") → "AAAAAAbbbbbb"<br>
+ * multChar("Hi-There") → "HHHiii---TTThhheeerrreee"<br>
    
    
 
-2. sandwichFilling  
+2. *sandwichFilling<br>
 
 /**
 	 * Return the string (backwards) that is between the first and last appearance
@@ -31,7 +27,7 @@ Java test driven development exercise.
 	 */
    
 
-3. evenlySpaced  
+3. evenlySpaced<br>
 
 	/**
 	 * Given three ints, a b c, one of them is small, one is medium and one is
