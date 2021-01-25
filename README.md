@@ -3,11 +3,11 @@ Java test driven development exercise.
 
 1. *multiChar*
 
- 	Given a string, return a string where for every char in the original string, there are three chars.<br>
- 	For Example:<br>
- 	* multChar("The") → "TTThhheee"<br>
- 	* multChar("AAbb") → "AAAAAAbbbbbb"<br>
-	* multChar("Hi-There") → "HHHiii---TTThhheeerrreee"<br>
+ 	Given a string, return a string where for every char in the original string, there are three chars.	
+ 	For Example:	
+ 	* multChar("The") → "TTThhheee"	
+ 	* multChar("AAbb") → "AAAAAAbbbbbb"	
+	* multChar("Hi-There") → "HHHiii---TTThhheeerrreee"	
    
    
 
@@ -16,11 +16,12 @@ Java test driven development exercise.
 
 	Return the string (backwards) that is between the first and last appearance  
 	of "bread" in the given string, or return the empty string "" if there is not  
-	2 occurances of "bread". Ignore Case  
-	* For Example: sandwichFilling("breadclivebread") → "evilc"
+	2 occurances of "bread". Ignore Case.	
+	For Example:	
+	* sandwichFilling("breadclivebread") → "evilc"
 	* sandwichFilling("xxbreadfridgebreadyy") → "egdirf"
 	* sandwichFilling("xxBreadfridgeBReAdyy") → "egdirf"
-	* sandwichFilling("xxbreadyy") → "" sandwichFilling("xxbreADyy") → ""
+	* sandwichFilling("xxbreadyy") → "" sandwichFilling("xxbreADyy") → ""	
 	HINT: "a" == "a" if false HINT: "a".equals("a") is true  
 
    
@@ -31,7 +32,7 @@ Java test driven development exercise.
 	 Given three ints, a b c, one of them is small, one is medium and one is  
 	 large. Return true if the three values are evenly spaced, so the difference  
 	 between small and medium is the same as the difference between medium and  
-	 large. Do not assume the ints will come to you in a reasonable order.  
+	 large. Do not assume the ints will come to you in a reasonable order.	
 
 	 For Example:	
 	 * evenlySpaced(2, 4, 6) → true<br>
@@ -46,8 +47,8 @@ Java test driven development exercise.
 	 Given a string and an int n, return a string that removes n letters from	
 	 the'middle' of the string. The string length will be at least n. The input	
 	 string will have an odd number of letters. n will always be an odd	
-	 number.	
-	 For Example:
+	 number.		
+	 For Example:	
 	 * nMid("Hello", 3) → "Ho"
 	 * nMid("Chocolate", 3) → "Choate"
 	 * nMid("Chocolate", 1) → "Choclate"
@@ -69,7 +70,8 @@ Java test driven development exercise.
 	 Given a string, return the length of the largest "block" in the string. A	
 	 block is a run of adjacent chars that are the same, do not ignore case.	
 	 
-	 For Example: superBlock("hooopplla") → 3	
+	 For Example:	
+	 * superBlock("hooopplla") → 3	
 	 * superBlock("abbCCCddDDDDeeEEE") → 4	
 	 * superBlock("abbCCCCC")) → 5	
 	 * superBlock("") → 0	
@@ -77,72 +79,58 @@ Java test driven development exercise.
 	 HINT: "a" == "a" if false HINT: "a".equals("a") is true
 	
 
-7. amISearch  
+7. *amISearch* 
+	
+	Given a string - return the number of times "am" appears in the String	
+	ignoring case - BUT ONLY WHEN the word "am" appears without being followed or	
+	preceded by other letters.		
+	For Example:	
+	* amISearch("Am I in Amsterdam") → 1	
+	* amISearch("I am in Amsterdam am I?") → 2	
+	* amISearch("I have been in Amsterdam") → 0		
+	HINT: String.toLowerCase
 
-/**
-	 * Given a string - return the number of times "am" appears in the String
-	 * ignoring case - BUT ONLY WHEN the word "am" appears without being followed or
-	 * preceded by other letters <br>
-	 * <br>
-	 * For Example: <br>
-	 * amISearch("Am I in Amsterdam") → 1 <br>
-	 * amISearch("I am in Amsterdam am I?") → 2 <br>
-	 * amISearch("I have been in Amsterdam") → 0 <br>
-	 * <br>
-	 * HINT: String.toLowerCase
-	 */
+8. *fizzBuzz*  
 
-8. fizzBuzz  
+	 Given a number if this number is divisible by 3 return "fizz" if this number	
+	 is divisible by 5 return "buzz" if this number is divisible by both 3 and 5	
+	 return "fizzbuzz" if this number is not divisible by 3 or 5 return null.		
+	 For Example:	
+	 fizzBuzz(3) → "fizz"	
+	 fizzBuzz(10) → "buzz"	
+	 fizzBuzz(15) → "fizzbuzz"	
+	 fizzBuzz(8) → null	
 
-	/**
-	 * Given a number if this number is divisible by 3 return "fizz" if this number
-	 * is divisible by 5 return "buzz" if this number is divisible by both 3 and 5
-	 * return "fizzbuzz" if this number is not divisible by 3 or 5 return null<br>
-	 * <br>
-	 * For Example: <br>
-	 * fizzBuzz(3) → "fizz" <br>
-	 * fizzBuzz(10) → "buzz" <br>
-	 * fizzBuzz(15) → "fizzbuzz" <br>
-	 * fizzBuzz(8) → null
-	 */
+9. *largest*
 
-9. largest  
+	 Given a string, split the string into the individual numbers present then add
+	 each digit of each number to get a final value for each number.	
 
-/**
-	 * Given a string, split the string into the individual numbers present then add
-	 * each digit of each number to get a final value for each number <br>
-	 * <br>
-	 * String example = "55 72 86"<br>
-	 * <br>
-	 * "55" will = the integer 10 <br>
-	 * "72" will = the integer 9 <br>
-	 * "86" will = the integer 14 <br>
-	 * <br>
-	 * You then need to return the highest vale <br>
-	 * <br>
-	 * For Example: <br>
-	 * largest("55 72 86") → 14 <br>
-	 * largest("15 72 80 164") → 11 <br>
-	 * largest("555 72 86 45 10") → 15 <br>
-	 * <br>
-	 * HINT: Integer.parseInt
-	 */
+	 String example = "55 72 86"	
+	 "55" will = the integer 10	
+	 "72" will = the integer 9	
+	 "86" will = the integer 14	
+	 You then need to return the highest vale	
+	 
+	 For Example:		
+	 * largest("55 72 86") → 14
+	 * largest("15 72 80 164") → 11	
+	 * largest("555 72 86 45 10") → 15	
+	 HINT: Integer.parseInt
 	 
 	 
 
-10. compares  
+10. *compares*  
 
-	/**
-	 * Given a string, int and a char, return a boolean value if the 'nth'
-	 * (represented by the int provided) char of the String supplied is the same as
-	 * the char supplied. The int provided will NOT always be less than than the
-	 * length of the String. Ignore case and Whitespace. <br>
-	 * <br>
-	 * For Example: <br>
-	 * compares("The",2,'h') → true <br>
-	 * compares("AAbb",1,'b') → false <br>
-	 * compares("Hi-There",10,'e') → false <br>
-	 * <br>
-	 * HINT: String.charAt
-	 */
+	 Given a string, int and a char, return a boolean value if the 'nth'	
+	 (represented by the int provided) char of the String supplied is the same as		
+	 the char supplied. The int provided will NOT always be less than than the		
+	 length of the String. Ignore case and Whitespace.	
+	 For Example:		
+	 * compares("The",2,'h') → true
+	 * compares("AAbb",1,'b') → false
+	 * compares("Hi-There",10,'e') → false	
+
+	 HINT: String.charAt
+
 
