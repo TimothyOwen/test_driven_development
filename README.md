@@ -101,10 +101,14 @@ Java test driven development exercise.
 	 is divisible by 5 return "buzz" if this number is divisible by both 3 and 5	
 	 return "fizzbuzz" if this number is not divisible by 3 or 5 return null.	
 	 
-	 For Example:		
-	 fizzBuzz(3) → "fizz"		
-	 fizzBuzz(10) → "buzz"		
-	 fizzBuzz(15) → "fizzbuzz"		
+	 For Example:	
+	 
+	 fizzBuzz(3) → "fizz"	
+	 
+	 fizzBuzz(10) → "buzz"	
+	 
+	 fizzBuzz(15) → "fizzbuzz"	
+	 
 	 fizzBuzz(8) → null	
 	
 9. *largest*
