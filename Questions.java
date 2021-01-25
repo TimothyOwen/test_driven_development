@@ -36,13 +36,13 @@ public class Questions {
 //
 	public boolean evenlySpaced(int a, int b, int c) {
 		boolean answer = false;
-		List<Integer> lList = new ArrayList<Integer>();
-		lList.add(a);
-		lList.add(b);
-		lList.add(c);
-		Collections.sort(lList);
-		int diff1 = Math.abs(lList.get(0) - lList.get(1));
-		int diff2 = Math.abs(lList.get(1) - lList.get(2));
+		List<Integer> intList = new ArrayList<Integer>();
+		intList.add(a);
+		intList.add(b);
+		intList.add(c);
+		Collections.sort(intList);
+		int diff1 = Math.abs(intList.get(0) - intList.get(1));
+		int diff2 = Math.abs(intList.get(1) - intList.get(2));
 		if (diff1 == diff2) {
 			answer = true;
 		}
