@@ -1,6 +1,7 @@
 <h1>Test Driven Development</h1>
 
-Test driven development exercise utilising JUnit.  
+Test driven development exercise utilising JUnit. Provided with various methods and tasked with completing them.	
+
 
 1. *multiChar*
 
