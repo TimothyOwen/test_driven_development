@@ -1,8 +1,8 @@
 <h1>Test Driven Development</h1>
 
 <h3>Contains two exercises:</h3>	
-Standalone Test driven development exercise utilising JUnit provided by trainer.[](#Standalone)
-Test driven development exercise found on QA community.[](#Community)
+Standalone Test driven development exercise utilising JUnit provided by trainer.(#Standalone)
+Test driven development exercise found on QA community.(#Community)
 
 *<h2 id="Standalone">Questions Exercise</h2>*
 
