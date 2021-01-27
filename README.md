@@ -4,7 +4,7 @@
 Standalone Test driven development exercise utilising JUnit provided by trainer.(#Questions-Exercise)	
 Test driven development exercise found on QA community.(#QA-Community-Test-Driven-Development-Exercise)	
 	
-##Questions Exercise
+## Questions Exercise
 
 1. *multiChar*
 
@@ -151,7 +151,7 @@ Test driven development exercise found on QA community.(#QA-Community-Test-Drive
 	 
 	 
 	 
-##QA Community Test Driven Development Exercise
+## QA Community Test Driven Development Exercise
 
 Using the following test class, write the code needed to fulfill each test class so that it passes.
 The method should check that the String value passed to it is a valid email address.	
