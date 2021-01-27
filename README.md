@@ -1,10 +1,10 @@
 <h1>Test Driven Development</h1>
 
 <h3>Contains two exercises:</h3>	
-Standalone Test driven development exercise utilising JUnit provided by trainer.(#Standalone)
-Test driven development exercise found on QA community.(#Community)
-
-*<h2 id="Standalone">Questions Exercise</h2>*
+Standalone Test driven development exercise utilising JUnit provided by trainer.(#standalone)	
+Test driven development exercise found on QA community.(#community)	
+	
+*<h2 id="standalone">Questions Exercise</h2>*
 
 1. *multiChar*
 
@@ -151,7 +151,7 @@ Test driven development exercise found on QA community.(#Community)
 	 
 	 
 	 
-*<h2 id="Community">QA Community Test Driven Development Exercise</h2>*	
+*<h2 id="community">QA Community Test Driven Development Exercise</h2>*	
 
 Using the following test class, write the code needed to fulfill each test class so that it passes.
 The method should check that the String value passed to it is a valid email address.	
