@@ -1,12 +1,12 @@
 <h1>Test Driven Development</h1>
 
 <h3>Contains two exercises:</h3>	
-<h3 #Standalone>Standalone Test driven development exercise utilising JUnit provided by trainer</h3>	
-<h3 #Community>Test driven development exercise found on QA community.</h3>
+Standalone Test driven development exercise utilising JUnit provided by trainer.[](#Standalone)
+Test driven development exercise found on QA community.[](#Community)
 
-*<h2>Questions Exercise</h2>*
+*<h2 id="Standalone">Questions Exercise</h2>*
 
-1. *multiChar*(#Standalone)
+1. *multiChar*
 
  	Given a string, return a string where for every char in the original string, there are three chars.	
 	
@@ -151,8 +151,8 @@
 	 
 	 
 	 
-*<h2>QA Community Test Driven Development Exercise</h2>*	
-(#Community)
+*<h2 id="Community">QA Community Test Driven Development Exercise</h2>*	
+
 Using the following test class, write the code needed to fulfill each test class so that it passes.
 The method should check that the String value passed to it is a valid email address.	
 
