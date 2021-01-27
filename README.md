@@ -1,9 +1,10 @@
 <h1>Test Driven Development</h1>
 
-<h3>Contains two exercises:</h3>	
-Standalone Test driven development exercise utilising JUnit provided by trainer[.](##questions-exercise)	
+<h3>Contains two exercises:</h3>
 
-Test driven development exercise found on QA community[.](##qa-community-test-driven-development-exercise)	
+[Standalone Test driven development exercise utilising JUnit provided by trainer.](## questions-exercise)	
+
+[Test driven development exercise found on QA community.](## qa-community-test-driven-development-exercise)	
 	
 ## Questions Exercise
 
