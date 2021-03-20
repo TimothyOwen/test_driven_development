@@ -153,7 +153,7 @@
 	 
 	 
 	 
-## QA Community Test Driven Development Exercise
+## Test Driven Development Exercise
 
 Using the following test class, write the code needed to fulfill each test class so that it passes.
 The method should check that the String value passed to it is a valid email address.	
